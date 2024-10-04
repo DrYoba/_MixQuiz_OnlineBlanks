@@ -8,11 +8,11 @@ router = APIRouter()
 
 templates = Jinja2Templates(directory="templates")
 
-@router.get('/awesome', response_class=HTMLResponse)
+@router.get('/mixquiz/awesome', response_class=HTMLResponse)
 async def get_basic_from(request: Request):
     return templates.TemplateResponse("awesome-form.html", {"request": request})
 
-@router.post('/awesome', response_class=HTMLResponse)
+@router.post('/mixquiz/awesome', response_class=HTMLResponse)
 async def post_basic_form(request: Request, form_data: AwesomeForm = Depends(AwesomeForm.as_form)):
     print(form_data)
     return templates.TemplateResponse("awesome-form.html", {"request": request})

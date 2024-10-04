@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link href="{{ url_for('static', path='/styles/blanks-style.css') }}" rel="stylesheet">
+    <script defer src="{{ url_for('static', path='scripts/open-blank.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="button-header"></div>
+    <div class="button-container">
+        <div id="btn_1">
+            <button data-modal-target="#modal">Тур 1</button>
+        </div>
+        <div id="btn_2">
+            <button data-modal-target="#modal">Тур 2</button>
+        </div>
+        <div id="btn_3">
+            <button data-modal-target="#modal">Тур 3</button>
+        </div>
+        <div id="btn_4">
+            <button data-modal-target="#modal">Тур 4</button>
+        </div>
+        <div id="btn_5">
+            <button data-modal-target="#modal">Тур 5</button>
+        </div>
+        <div id="btn_6">
+            <button data-modal-target="#modal">Тур 6</button>
+        </div>
+        <div id="btn_7">
+            <button data-modal-target="#modal">Тур 7</button>
+        </div>
+    </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title" id="tour_number">Example Modal</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form method="POST">
+                <div class="blank-line">
+                    <p>Ответ 1</p><input for="q1" type="text" name="q1">
+                </div>
+                <div class="blank-line">
+                    <p>Ответ 2</p><input for="q2" type="text" name="q2">
+                </div>
+                <div class="blank-line">
+                    <p>Ответ 3</p><input for="q3" type="text">
+                </div>
+                <div class="blank-line">
+                    <p>Ответ 4</p><input for="q4" type="text">
+                </div>
+                <div class="blank-line">
+                    <p>Ответ 5</p><input for="q5" type="text">
+                </div>
+                <div class="blank-line">
+                    <p>Ответ 6</p><input for="q6" type="text">
+                </div>
+                <div class="blank-line">
+                    <p>Ответ 7</p><input for="q7" type="text">
+                </div>
+                <button type="submit" value="Submit">SUBMIT ANSWER</button>
+            </form>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>

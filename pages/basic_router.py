@@ -6,12 +6,10 @@ router = APIRouter()
 
 templates = Jinja2Templates(directory="templates")
 
-@router.get('/basic', response_class=HTMLResponse)
+@router.get('/mixquiz/basic', response_class=HTMLResponse)
 async def get_basic_from(request: Request):
     return templates.TemplateResponse("basic-form.html", {"request": request})
 
-@router.post('/basic', response_class=HTMLResponse)
+@router.post('/mixquiz/basic/{tn}', response_class=HTMLResponse)
 async def post_basic_form(request: Request, username: str = Form(...), password: str = Form(...)):
-    print(f'username: {username}')
-    print(f'password: {password}')
     return templates.TemplateResponse("basic-form.html", {"request": request})
