@@ -9,6 +9,8 @@ from pages.awesome_router import router as awesome_router
 from pages.login_router import router as login_router
 from pages.blanks_router import router as blanks_router
 
+from google_sheets.google_sheet_api import agcm
+
 app = FastAPI()
 
 templates = Jinja2Templates(directory="templates")

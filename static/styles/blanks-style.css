@@ -1,18 +1,22 @@
+/*
 @font-face {
     font-family: "HeliosCond";
-    src: url('./src/fonts/HeliosCondC.ttf') format('embedded-opentype'), /* Internet Explorer */
-        url('./src/fonts/HeliosCondC.ttf') format('woff2'),             /* Super Modern Browsers */
-        url('./src/fonts/HeliosCondC.ttf') format('woff'),              /* Pretty Modern Browsers */
-        url('./src/fonts/HeliosCondC.ttf') format('truetype'),          /* Safari, Android, iOS */
+    src: url('./src/fonts/HeliosCondC.ttf') format('embedded-opentype'),
+        url('./src/fonts/HeliosCondC.ttf') format('woff2'),
+        url('./src/fonts/HeliosCondC.ttf') format('woff'),
+        url('./src/fonts/HeliosCondC.ttf') format('truetype'),
         url('./src/fonts/HeliosCondC.ttf') format('svg');
     }
+*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'HeliosCond';
+    /*font-family: 'HeliosCond';*/
 }
+
+
 
 div.container {
     width: 100%;

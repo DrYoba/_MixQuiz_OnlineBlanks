@@ -42,27 +42,30 @@
         <div class="modal-body">
             <form method="POST">
                 <div class="blank-line">
-                    <p>Ответ 1</p><input for="q1" type="text" name="q1">
+                    <p>Ответ 1</p><input type="text" name="q1">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 2</p><input for="q2" type="text" name="q2">
+                    <p>Ответ 2</p><input type="text" name="q2">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 3</p><input for="q3" type="text">
+                    <p>Ответ 3</p><input type="text" name="q3">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 4</p><input for="q4" type="text">
+                    <p>Ответ 4</p><input type="text" name="q4">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 5</p><input for="q5" type="text">
+                    <p>Ответ 5</p><input type="text" name="q5">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 6</p><input for="q6" type="text">
+                    <p>Ответ 6</p><input type="text" name="q6">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 7</p><input for="q7" type="text">
+                    <p>Ответ 7</p><input type="text" name="q7">
                 </div>
-                <button type="submit" value="Submit">SUBMIT ANSWER</button>
+                <div class="hidden">
+                    <p class="hidden">hidden_input</p><input type="text" name="hidden" id="hidden-input" class="hidden">
+                </div>
+                <button type="submit" value="Submit" onclick="forwardToBlanks()">SUBMIT ANSWER</button>
             </form>
         </div>
     </div>
