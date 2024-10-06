@@ -9,7 +9,7 @@ from pages.awesome_router import router as awesome_router
 from pages.login_router import router as login_router
 from pages.blanks_router import router as blanks_router
 
-from google_sheets.google_sheet_api import agcm
+from google_sheets.google_sheet_sync_api import gm
 
 app = FastAPI()
 
@@ -23,4 +23,4 @@ app.include_router(blanks_router)
 
 
 if __name__ == '__main__':
-    uvicorn.run(app)
+    uvicorn.run(app, port=8001)

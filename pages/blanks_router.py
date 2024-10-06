@@ -1,12 +1,10 @@
-import asyncio
 from typing import Dict
+from google_sheets.google_sheet_sync_api import gm
 
 from fastapi import APIRouter, Request, Depends, Form
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from starlette.background import BackgroundTasks
-
-from google_sheets.google_sheet_functions import push_data
 
 
 router = APIRouter()
@@ -16,11 +14,6 @@ templates = Jinja2Templates(directory="templates")
 @router.get('/mixquiz/7x7/{team_name}', response_class=HTMLResponse)
 async def get_blanks_page(request: Request):
     return templates.TemplateResponse("blanks.html", {"request": request})
-
-"""@router.post('/mixquiz/7x7/{team_name}', response_class=HTMLResponse)
-async def post_blank_data(request: Request, form_data: AnswerForm = Depends(AnswerForm.as_form)):
-    print(form_data)
-    return templates.TemplateResponse("blanks.html", {"request": request})"""
 
 async def get_team_blank_data(
         team_name: str,
@@ -51,8 +44,8 @@ async def get_team_blank_data(
     }
     return blank_data
 
-async def push_blank_data(data: Dict[str, str]):
-    await push_data(data=data)
+def push_blank_data(data: Dict[str, str]):
+    gm.push_data(data=data)
 
 @router.post('/mixquiz/7x7/{team_name}', response_class=HTMLResponse)
 async def post_blank_data(request: Request, background_tasks: BackgroundTasks, blank_data = Depends(get_team_blank_data)):
