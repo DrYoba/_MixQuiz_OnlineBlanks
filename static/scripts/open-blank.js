@@ -18,7 +18,7 @@ overlay.addEventListener('click', () => {
 openModalButtons.forEach(button => {
     button.addEventListener('click', () =>{
         const modal = document.querySelector(button.dataset.modalTarget)
-        openModal(modal, button.innerHTML)
+        openModal(modal, button.firstElementChild.textContent)
     })
 })
 
