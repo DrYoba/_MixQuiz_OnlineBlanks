@@ -50,6 +50,13 @@ div.button-container div button {
     height: 60%;
 }
 
+div.hidden {
+    position: absolute;
+    top: 0px;
+    left: -1000px;
+    opacity: 0;
+}
+
 .modal {
     position: fixed;
     top: 50%;

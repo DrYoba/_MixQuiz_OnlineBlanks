@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37fef8a9-a961-4396-9a7e-ccc4218703a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/_MixQuiz_OnlineBlanks.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/google_sheets/google_sheet_sync_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/google_sheets/google_sheet_sync_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google_sheets/google_sheet_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/google_sheets/google_sheet_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google_sheets/google_sheet_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/google_sheets/google_sheet_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blanks_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blanks_router.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles/blanks-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/blanks-style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,17 +31,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.app.executor": "Run",
-    "Python.google_sheet_sync_api.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/MyApps/LocalProjects/Web/_MixQuiz_OnlineBlanks",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.google_sheet_sync_api.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/MyApps/LocalProjects/Web/_MixQuiz_OnlineBlanks&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\MyApps\LocalProjects\Web\_MixQuiz_OnlineBlanks\static\styles" />
