@@ -23,4 +23,4 @@ app.include_router(blanks_router)
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, port=8003)
+    uvicorn.run(app)
