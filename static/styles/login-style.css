@@ -61,7 +61,8 @@ body{
 .container .btn-box{
     width: 30%;
     align-self: center;
-    border: 1.5px solid rgb(0, 121, 194, .7);
+    border: 1.5px solid rgb(0, 121, 194, 1);
+    color: rgb(0, 121, 194, .7);
     border-radius: 40px;
     padding: 0;
     margin: 0;
@@ -69,16 +70,20 @@ body{
 
 .btn-box button{
     width: 100%;
-    height: 45px;
-    background: #fff;
+    height: 60px;
+    background: rgb(0, 121, 194, 1);
+    color: whitesmoke;
     border: none;
     outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgb(0,0, 0, .1);
     cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.btn-box button:hover {
+    background: rgb(0, 121, 194, 0.4);
 }
 
 .input-box input{
@@ -99,10 +104,12 @@ body{
 }
 
 .picture-logo{
+    margin 0;
+    padding 0;
     transform: scale(0.4);
 }
 
 .picture-owl{
-    align-self: stretch;
-    transform: scale(1.2);
+
+    transform: scale(1);
 }
