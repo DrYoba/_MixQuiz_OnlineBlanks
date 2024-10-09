@@ -9,10 +9,10 @@ class GoogleSheetManager:
 
     def update_row(self) -> int:
         str_list = list(filter(None, self.ws.col_values(1)))
-        return len(str_list)
+        return len(str_list) + 1
 
     def push_data(self, data: Dict[str, str]):
-        self.row += 1
+        self.row = self.update_row()
         cells = self.ws.range('%s:%s' % (f"A{self.row}", f"M{self.row}"))
 
         cells[0].value = data["answer1"]
