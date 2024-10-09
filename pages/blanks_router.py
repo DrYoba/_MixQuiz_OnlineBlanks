@@ -1,3 +1,5 @@
+from datetime import datetime
+from random import randint
 from typing import Dict
 from google_sheets.google_sheet_sync_api import gm
 
@@ -10,6 +12,16 @@ from starlette.background import BackgroundTasks
 router = APIRouter()
 
 templates = Jinja2Templates(directory="templates")
+
+form_ids = {
+    "round1": "form744365622",
+    "round2": "form744367803",
+    "round3": "form744367895",
+    "round4": "form744368008",
+    "round5": "form744368091",
+    "round6": "form744368146",
+    "round7": "form744368182",
+}
 
 @router.get('/mixquiz/7x7/{team_name}', response_class=HTMLResponse)
 async def get_blanks_page(request: Request):
@@ -37,10 +49,10 @@ async def get_team_blank_data(
         "answer7": q7,
         "team": team_name,
         "referer": formed_url,
-        "formid": None,
+        "formid": form_ids[hidden],
         "Form name": hidden,
-        "sent": None,
-        "requestid": None,
+        "sent": datetime.now().strftime("%Y-%m-%d  %H:%M:%S"),
+        "requestid": f"8305763:{randint(6700000000, 6900000000)}",
     }
     return blank_data
 
