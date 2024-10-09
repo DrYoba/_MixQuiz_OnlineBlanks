@@ -14,13 +14,13 @@ router = APIRouter()
 templates = Jinja2Templates(directory="templates")
 
 form_ids = {
-    "round1": "form744365622",
-    "round2": "form744367803",
-    "round3": "form744367895",
-    "round4": "form744368008",
-    "round5": "form744368091",
-    "round6": "form744368146",
-    "round7": "form744368182",
+    "Тур 1": "form744365622",
+    "Тур 2": "form744367803",
+    "Тур 3": "form744367895",
+    "Тур 4": "form744368008",
+    "Тур 5": "form744368091",
+    "Тур 6": "form744368146",
+    "Тур 7": "form744368182",
 }
 
 @router.get('/mixquiz/7x7/{team_name}', response_class=HTMLResponse)
