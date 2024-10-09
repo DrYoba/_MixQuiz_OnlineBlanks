@@ -38,7 +38,6 @@ div.container {
 div.button-header {
     width: 100%;
     height: 30vh;
-    border-bottom: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,12 +52,19 @@ div.button-header h1 {
     font-size: 2.5em;
 }
 
+div.button-header a {
+    font-family: 'HeliosCondB';
+    color: rgba(0, 121, 194, 1);
+    text-decoration: none;
+}
+
 div.button-header p {
     text-align: center;
     vertical-align: middle;
     font-size: 1.4em;
     font-family: 'HeliosCond';
 }
+
 
 div.button-container{
     width: 80%;
@@ -120,7 +126,18 @@ div.button-container div button {
     font-size: 1.2em;
     border: none;
     border-radius: 15px;
-    background-color: #fff
+    background-color: #fff;
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.2);
+}
+
+div.button-container div button:hover {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 div.hidden {
@@ -136,8 +153,6 @@ div.hidden {
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
-    border: 1px solid black;
-    border-radius: 10px;
     z-index: 10;
     background-color: white;
     width: 500px;
@@ -151,18 +166,18 @@ div.hidden {
 .modal-header {
     padding: 10px 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
 }
 
 .modal-header .title {
-    font-size: 1.25rem;
+    align-self: center;
+    font-size: 1.7rem;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .modal-header .close-button {
-    cursor: pointer;
     border: none;
     outline: none;
     background: none;
@@ -176,15 +191,27 @@ div.hidden {
     flex-direction: column;
 }
 
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+}
+
 .modal-body .blank-line {
     width: 100%;
-    /*padding: 10px 0px;*/
+    padding-top: 15px;
+}
+
+.modal-body .blank-line p{
+    opacity: 0.9;
+    font-family: 'HeliosCond';
+    padding-bottom: 5px;
 }
 
 .blank-line input {
     width: 100%;
     font-size: 1em;
     border: none;
+    padding-bottom: 5px;
     border-bottom: 1px solid black;
 }
 
@@ -194,6 +221,23 @@ div.hidden {
 
 .blank-line input:focus {
     outline-width: 0;
+}
+
+.modal-body form button {
+    font-size: 1.2em;
+    align-self: center;
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgba(0, 121, 194, 1);
+    border: 1px solid rgba(0, 121, 194, 1);
+}
+
+.modal-body form button:hover {
+    color: rgba(0, 121, 194, 1);
+    background-color: #fff;
 }
 
 #overlay {
@@ -206,6 +250,13 @@ div.hidden {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 3.5em;
+    font-weight: 500;
+    color:rgba(255, 255, 255, 0.9)
 }
 
 #overlay.active {

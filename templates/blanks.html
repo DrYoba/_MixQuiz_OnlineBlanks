@@ -61,38 +61,38 @@
     <div class="modal" id="modal">
         <div class="modal-header">
             <div class="title" id="tour_number">Example Modal</div>
-            <button data-close-button class="close-button">&times;</button>
+            <button data-close-button class="close-button"></button>
         </div>
         <div class="modal-body">
             <form method="POST">
                 <div class="blank-line">
-                    <p>Ответ 1</p><input type="text" name="q1">
+                    <p>Ответ 1</p><input type="text" name="q1" autocomplete="off">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 2</p><input type="text" name="q2">
+                    <p>Ответ 2</p><input type="text" name="q2" autocomplete="off">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 3</p><input type="text" name="q3">
+                    <p>Ответ 3</p><input type="text" name="q3" autocomplete="off">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 4</p><input type="text" name="q4">
+                    <p>Ответ 4</p><input type="text" name="q4" autocomplete="off">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 5</p><input type="text" name="q5">
+                    <p>Ответ 5</p><input type="text" name="q5" autocomplete="off">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 6</p><input type="text" name="q6">
+                    <p>Ответ 6</p><input type="text" name="q6" autocomplete="off">
                 </div>
                 <div class="blank-line">
-                    <p>Ответ 7</p><input type="text" name="q7">
+                    <p>Ответ 7</p><input type="text" name="q7" autocomplete="off">
                 </div>
                 <div class="hidden">
                     <p class="hidden">hidden_input</p><input type="text" name="hidden" id="hidden-input" class="hidden">
                 </div>
-                <button type="submit" value="Submit" onclick="forwardToBlanks()">SUBMIT ANSWER</button>
+                <button type="submit" value="Submit" onclick="forwardToBlanks()">Сдаю!</button>
             </form>
         </div>
     </div>
-    <div id="overlay"></div>
+    <div id="overlay">&times;</div>
 </body>
 </html>
