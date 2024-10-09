@@ -8,7 +8,7 @@ class GoogleSheetManager:
         self.row = self.update_row()
 
     def update_row(self) -> int:
-        str_list = list(filter(None, self.ws.col_values(1)))
+        str_list = list(filter(None, self.ws.col_values(8)))
         return len(str_list) + 1
 
     def push_data(self, data: Dict[str, str]):
