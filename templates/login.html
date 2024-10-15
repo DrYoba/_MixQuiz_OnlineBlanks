@@ -11,14 +11,14 @@
     <div class="wrapper">
         <div class="left-column"></div>
         <div class="container">
-            <div class=img-box>
+            <div class=img-box id="box-1">
                 <img class="picture-logo" src="{{ url_for('static', path='imgs/gas-logo.png') }}" alt="">
             </div>
-            <div class=img-box>
+            <div class=img-box id="box-2">
                 <img class="picture-owl" src="{{ url_for('static', path='imgs/alfa-owl.png') }}" alt="">
             </div>
             <div class="input-box">
-                <input id="team_name" type="text" placeholder="Введите название команды" required>
+                <input id="team_name" type="text" autocomplete="off" placeholder="Введите название команды" required>
             </div>
             <div class="btn-box">
                 <button onclick="forwardToBlanks()">
