@@ -42,10 +42,15 @@ body{
     width: 100%;
 }
 
+.img-box#box-2 img {
+    height: 100%;
+    width: 100%;
+}
+
 .container .input-box{
     padding: 20px 0px;
     width: 80%;
-    height: 80px;
+    height: 75px;
     display: flex;
     flex-direction: column;
 }
@@ -61,8 +66,8 @@ body{
 }
 
 .btn-box button{
-    width: 80%;
-    height: 60px;
+    width: 100%;
+    height: 50px;
     background: rgb(0, 121, 194, 1);
     color: whitesmoke;
     border: none;
@@ -88,7 +93,6 @@ body{
     border-radius: 40px;
     font-size: 16px;
     text-align: center;
-    autocomplete: off;
 }
 
 .input-box input:focus {
@@ -100,3 +104,4 @@ body{
     font-size: 24px;
     color: grey;
 }
+

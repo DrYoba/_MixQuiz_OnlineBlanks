@@ -4,7 +4,7 @@ from typing import Dict
 class GoogleSheetManager:
 
     def __init__(self, gc):
-        self.ws = gc.open("Ответы MixQuiz").sheet1
+        self.ws = gc.open("MAIN").sheet1
         self.row = self.update_row()
 
     def update_row(self) -> int:
