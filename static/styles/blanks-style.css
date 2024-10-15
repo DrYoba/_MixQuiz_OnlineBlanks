@@ -112,6 +112,7 @@ div.button-container div .button-text {
     font-family: 'HeliosCondB';
     font-size: 1em;
     padding-bottom: 15px;
+    color: rgba(0, 0, 0, 1);
 }
 
 div.button-container div .button-caption {

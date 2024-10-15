@@ -33,6 +33,10 @@ body{
     width: 223px;
 }
 
+.img-box#box-2 {
+    width: 375px;
+}
+
 .img-box#box-1 img {
     height: 100%;
     width: 100%;
@@ -57,7 +61,7 @@ body{
 }
 
 .btn-box button{
-    width: 100%;
+    width: 80%;
     height: 60px;
     background: rgb(0, 121, 194, 1);
     color: whitesmoke;
